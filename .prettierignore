@@ -1,0 +1,7 @@
+dist
+node_modules
+package-lock.json
+
+# hand-authored prompt/spec content, not code
+.claude/docs
+README.md
