@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+/**
+ * Design tokens — Kumasya Admin
+ * Source of truth: Figma "Foundations" node (figma-map.md), Blueprint-style
+ * color/control scale + Carbon-style spacing. Values are read verbatim from
+ * Figma via MCP, not guessed. Token names mirror the Figma variable names
+ * (e.g. bg/app -> --bg-app) so any value can be traced back to its swatch.
+ */
+@theme {
+  --font-sans: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Surfaces */
+  --color-bg-app: #f6f7f9;
+  --color-bg-surface: #ffffff;
+  --color-bg-subtle: #edeff2;
+  --color-bg-sidebar: #252a31;
+  --color-bg-sidebar-active: #383e47;
+  --color-bg-primary: #2d72d2;
+
+  /* State tints */
+  --color-bg-primary-subtle: #e8f1fc;
+  --color-bg-success-subtle: #e5f3eb;
+  --color-bg-warning-subtle: #fbf1e3;
+  --color-bg-danger-subtle: #fae9e9;
+  --color-bg-neutral-subtle: #edeff2;
+
+  /* Borders */
+  --color-border-subtle: #dce0e5;
+  --color-border-default: #d3d8de;
+  --color-border-strong: #abb3bf;
+  --color-border-focus: #2d72d2;
+
+  /* Text */
+  --color-text-primary: #1c2127;
+  --color-text-muted: #5f6b7c;
+  --color-text-subtle: #67727f;
+  --color-text-link: #215db0;
+  --color-text-success: #1c6e42;
+  --color-text-warning: #935610;
+  --color-text-danger: #ac2f33;
+  --color-text-inverse: #ffffff;
+  --color-text-on-dark-muted: #abb3bf;
+
+  /* Danger action fill (button), distinct from text/danger */
+  --color-palette-red3: #cd4246;
+
+  /* Radius — Blueprint scale (controls 2px, cards 4px) */
+  --radius-md: 4px;
+
+  /* Typography — IBM Plex Sans/Mono styles from the Foundations block */
+  --text-display: 2rem;
+  --text-display--line-height: 2.5rem;
+  --text-display--font-weight: 600;
+
+  --text-heading-lg: 1.25rem;
+  --text-heading-lg--line-height: 1.75rem;
+  --text-heading-lg--font-weight: 600;
+
+  --text-heading-md: 1rem;
+  --text-heading-md--line-height: 1.375rem;
+  --text-heading-md--font-weight: 600;
+
+  --text-heading-sm: 0.875rem;
+  --text-heading-sm--line-height: 1.125rem;
+  --text-heading-sm--letter-spacing: 0.01em;
+  --text-heading-sm--font-weight: 600;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
+
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+  --text-body-sm--letter-spacing: 0.01em;
+
+  --text-body-compact: 0.875rem;
+  --text-body-compact--line-height: 1.125rem;
+  --text-body-compact--letter-spacing: 0.01em;
+
+  --text-label: 0.75rem;
+  --text-label--line-height: 1rem;
+  --text-label--letter-spacing: 0.02em;
+  --text-label--font-weight: 500;
+
+  --text-caption: 0.6875rem;
+  --text-caption--line-height: 1rem;
+  --text-caption--letter-spacing: 0.0375em;
+  --text-caption--font-weight: 600;
+}
+
+body {
+  background-color: var(--color-bg-app);
+  color: var(--color-text-primary);
+}
